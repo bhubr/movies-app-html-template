@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies App</title>
-  <link rel="stylesheet" href="sidebar.css">
-  <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
-  <div class="header"></div>
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href="https://vanila.io" target="_blank">Company</a></li>
-      <li><a href="https://instagram.com/plavookac" target="_blank">Instagram</a></li>
-      <li><a href="https://twitter.com/plavookac" target="_blank">Twitter</a></li>
-      <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
-    </ul>
-  </div>
-  <div id='center' class="main center">
-    <div class="box">xx</div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+    <link rel="stylesheet" href="flexboxgrid.min.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header"><img class="logo" src="logo.png" /></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="#" target="_blank">Action</a></li>
+        <li><a href="#" target="_blank">Adventure</a></li>
+        <li><a href="#" target="_blank">Animation</a></li>
+        <li><a href="#" target="_blank">Comedy</a></li>
+        <li><a href="#" target="_blank">Crime</a></li>
+        <li><a href="#" target="_blank">Documentary</a></li>
+        <li><a href="#" target="_blank">Drama</a></li>
+      </ul>
+    </div>
 
-</body>
+    <div id="center" class="main center">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
 </html>

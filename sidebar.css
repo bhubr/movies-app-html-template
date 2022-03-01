@@ -20,7 +20,11 @@ body {
     position: fixed;
     height: 60px!important;
     overflow: hidden;
-    box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
+    box-shadow: #0003 0 2px 4px -1px, #00000024 0 3px 4px, #0000001f 0 1px 7px;
+}
+.header .logo {
+  margin-left: 0;
+  transition: margin-left 250ms ease-in-out;
 }
 .main {
     margin: 0 auto;
@@ -42,18 +46,44 @@ body {
     letter-spacing: 1.25px;
 }
 #sidebarMenu {
-    z-index: 10;
     height: 100%;
     position: fixed;
     left: 0;
     width: 220px;
-    transform: translateX(-220px);
     transition: transform 250ms ease-in-out;
     background: #FFFFFF;
+}
+@media screen and (max-width: 1023px) {
+  .header .logo {
+    margin-left: 60px;
+  }
+  #sidebarMenu {
+    transform: translateX(-230px);
+    z-index: 10;
     box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
+  }
+  .sidebarMenuInner {
+    margin: 90px 0 0 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    z-index: 10;
+  }
+  #sidebarMenu {
+    border-right: 1px solid #ddd;
+    margin-top: 60px;
+  }
+  .sidebarMenuInner {
+    margin: 30px 0 0 0;
+  }
+  .sidebarIconToggle {
+    display: none;
+  }
 }
 .sidebarMenuInner{
-    margin: 60px 0 0 0;
+    max-height: calc(100% - 90px);
+    overflow-y: scroll;
     padding:0;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -73,7 +103,6 @@ body {
 }
 .sidebarMenuInner li a{
     color: #444;
-    text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
