@@ -16,11 +16,11 @@ body {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #FC466B;
+    /* background-color: #FC466B; */
     position: fixed;
     height: 60px!important;
     overflow: hidden;
-    z-index: 10;
+    box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
 }
 .main {
     margin: 0 auto;
@@ -42,26 +42,27 @@ body {
     letter-spacing: 1.25px;
 }
 #sidebarMenu {
+    z-index: 10;
     height: 100%;
     position: fixed;
     left: 0;
-    width: 250px;
-    margin-top: 60px;
-    transform: translateX(-250px);
+    width: 220px;
+    transform: translateX(-220px);
     transition: transform 250ms ease-in-out;
-    background: #FC466B;
+    background: #FFFFFF;
+    box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
 }
 .sidebarMenuInner{
-    margin:0;
+    margin: 60px 0 0 0;
     padding:0;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner li{
     list-style: none;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: bold;
-    padding: 20px;
+    padding: 15px 20px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -71,7 +72,7 @@ body {
     color: rgba(255, 255, 255, 0.50);
 }
 .sidebarMenuInner li a{
-    color: #fff;
+    color: #444;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -105,7 +106,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #444;
 }
 .horizontal {
     transition: all 0.3s;
