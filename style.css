@@ -8,11 +8,17 @@
     margin: 6em auto;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .container {
     margin: 6em 0;
-    margin-left: 240px;
+    margin-left: 200px;
     max-width: calc(100vw - 220px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    margin: 6em 16%;
+    max-width: 1060px;
   }
 }
 
