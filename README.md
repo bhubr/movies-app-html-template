@@ -194,3 +194,15 @@ Format des données à envoyer :
   "text": "Quite the scary movie too"
 }
 ```
+
+Données **renvoyées** si vous avez respecté le format d'entrée :
+
+```json
+{
+  "id": 6,
+  "movieId": 632727,
+  "text": "Quite the scary movie too",
+  "rating": "8",
+  "date": "2022-03-02T13:16:09.845Z"
+}
+```
