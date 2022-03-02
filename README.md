@@ -96,6 +96,11 @@ Extrait (ici avec 2 films, l'API en renvoyant 60) :
 ]
 ```
 
+> :fire: **Ajout** : possiblité de filtrer les données obtenues en passant en paramètre :
+>
+> * `genre_id` suivi d'un id numérique de genre : [exemple pour le genre Action (id=28)](https://movie-api.benoithubert.me/movies?genre_id=28)
+> * `genre` suivi d'un **nom** de genre : [exemple pour le genre Action (name=action)](https://movie-api.benoithubert.me/movies?genre=action)
+
 ### Détails d'un film
 
 À utiliser pour "peupler" la page de détails
@@ -206,3 +211,11 @@ Données **renvoyées** si vous avez respecté le format d'entrée :
   "date": "2022-03-02T13:16:09.845Z"
 }
 ```
+
+### Liste de tous les genres
+
+> :fire: **Ajout** : (**utilisation optionnelle**, ajouté pour ceux qui avaient tout fini en avance).
+
+À utiliser pour "peupler" la sidebar avec les genres
+
+URL : <https://movie-api.benoithubert.me/genres/>
