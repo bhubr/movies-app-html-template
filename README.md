@@ -96,6 +96,8 @@ Extrait (ici avec 2 films, l'API en renvoyant 60) :
 ]
 ```
 
+#### Filtrage de la liste de films
+
 > :fire: **Ajout** : possiblité de filtrer les données obtenues en passant en paramètre :
 >
 > * `genre_id` suivi d'un id numérique de genre : [exemple pour le genre Action (id=28)](https://movie-api.benoithubert.me/movies?genre_id=28)
